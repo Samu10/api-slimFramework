@@ -24,8 +24,8 @@ class PersonController extends AbstractController
         $data = json_decode($request->getBody()->getContents());
 
         //Hydratation de l'objet Person
-        $person->setName($data->name)
-            ->setFirstName($data->firstname);
+        $person ->setName($data->name)
+            ->setFirstName($data->firstName);
 
         //Insertion dans la BD
         $dao->insertOne($person);

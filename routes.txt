@@ -1,0 +1,6 @@
+url             method      Description
+/person         GET         Liste de toutes les personnes
+/person/{id}    GET         Une personne
+/person         POST        Création d'une personne
+/person/{id}    DELETE      Suppression d'une personne
+/person/{id}    PUT         Modification d'une personne

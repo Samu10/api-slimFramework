@@ -52,6 +52,17 @@ $app->get("/user", function (Request $request, Response $response) {
 
 $app->post("/person", [\App\Controller\PersonController::class, "insert"]);
 
+$app->delete("/person/{id}",[\App\Controller\PersonController::class,"deletePerson"]);
+
+$app->get("/person/{id}",[\App\Controller\PersonController::class,"person"]);
+
+$app->get("/person",[\App\Controller\PersonController::class,"personAll"]);
+
+$app->put("/person/{id}",[\App\Controller\PersonController::class,"updatePerson"]);
+
+
+
+
 //Lancement de l'application
 $app->run();
 

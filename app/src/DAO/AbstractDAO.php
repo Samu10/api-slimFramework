@@ -30,6 +30,7 @@ abstract class AbstractDAO
     }
 
 
+
     /**
      * @param int $id
      */
@@ -45,6 +46,7 @@ abstract class AbstractDAO
     }
 
 
+
     /**
      * @return array
      */
@@ -56,6 +58,7 @@ abstract class AbstractDAO
 
         return $statement->fetchAll();
     }
+
 
 
     /**
